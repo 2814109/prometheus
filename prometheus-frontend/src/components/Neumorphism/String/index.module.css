@@ -1,0 +1,28 @@
+.string {
+  color: #c0c0c0;
+  font-size: 8em;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-shadow: -6px 6px 15px rgba(0, 0, 0, 0.5),
+    6px -6px 15px rgba(255, 255, 255, 0.8);
+  position: relative;
+}
+
+.string::before {
+  left: 0;
+  width: 100px;
+  height: 100px;
+  top: -150px;
+  z-index: 10;
+  box-shadow: inset -6px 6px 15px rgba(0, 0, 0, 0.5),
+    inset 6px -6px 15px rgba(255, 255, 255, 0.8);
+}
+.string::after {
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  top: -200px;
+  box-shadow: -6px 6px 15px rgba(0, 0, 0, 0.5),
+    6px -6px 15px rgba(255, 255, 255, 0.8);
+}
