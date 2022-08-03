@@ -1,14 +1,18 @@
 import { FC, useState } from "react";
 import style from "./index.module.css";
 
-const NeumorphismButton: FC = () => {
-  const [isActive, setIsActive] = useState<boolean>(false);
-  console.log(isActive);
+type Props = {
+  onClick: () => void;
+  name: string;
+  fontRemSize?: number;
+};
+const NeumorphismButton: FC<Props> = ({ name, onClick, fontRemSize = 1 }) => {
+  //   const [isActive, setIsActive] = useState<boolean>(false);
+  const isActive = false;
   return (
     <button
-      onClick={() => {
-        setIsActive(!isActive);
-      }}
+      style={{ fontSize: `${fontRemSize}rem` }}
+      onClick={onClick}
       className={`${style.neumorphismButton} 
        ${
          isActive
@@ -16,7 +20,9 @@ const NeumorphismButton: FC = () => {
            : style.neumorphismButtonPassive
        }
         `}
-    />
+    >
+      {name}
+    </button>
   );
 };
 

@@ -3,7 +3,7 @@ import NeumorphismButton from "../../components/Neumorphism/Button";
 
 const Page: FC = () => (
   <>
-    <NeumorphismButton />
+    <NeumorphismButton onClick={() => {}} name="button" />
   </>
 );
 
