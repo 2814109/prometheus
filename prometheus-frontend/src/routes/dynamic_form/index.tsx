@@ -1,4 +1,4 @@
-import React, { FC, useState, useCallback, memo } from "react";
+import { FC, useState, useCallback, memo } from "react";
 import NeumorphismButton from "../../components/Neumorphism/Button";
 import ListItem from "../../components/Neumorphism/ListItem";
 import { Item } from "../../types/Item";
