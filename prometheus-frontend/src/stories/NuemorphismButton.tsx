@@ -2,13 +2,15 @@ import { FC, useState } from "react";
 import "./newmorphismButton.css";
 
 type Props = {
-  onClick: () => void;
   name: string;
   fontRemSize?: number;
 };
-const NeumorphismButton: FC<Props> = ({ name, onClick, fontRemSize = 1 }) => {
-  //   const [isActive, setIsActive] = useState<boolean>(false);
-  const isActive = false;
+const NeumorphismButton: FC<Props> = ({ name, fontRemSize = 1 }) => {
+  const [isActive, setIsActive] = useState<boolean>(false);
+
+  const onClick = () => {
+    setIsActive(!isActive);
+  };
   return (
     <button
       style={{ fontSize: `${fontRemSize}rem` }}
