@@ -1,21 +1,20 @@
-import { FC, useState } from "react";
-import style from "./index.module.css";
+import { FC } from "react";
 import { ButtonProps } from "types/Button";
-
-const NeumorphismButton: FC<ButtonProps> = ({
+import style from "./index.module.css";
+const RoundedSideButton: FC<ButtonProps> = ({
   name,
   onClick,
+  isLoading,
   fontRemSize = 1,
 }) => {
-  //   const [isActive, setIsActive] = useState<boolean>(false);
-  const isActive = false;
   return (
     <button
+      disabled={!isLoading}
       style={{ fontSize: `${fontRemSize}rem` }}
       onClick={onClick}
       className={`${style.neumorphismButton} 
        ${
-         isActive
+         isLoading
            ? style.neumorphismButtonActive
            : style.neumorphismButtonPassive
        }
@@ -26,4 +25,4 @@ const NeumorphismButton: FC<ButtonProps> = ({
   );
 };
 
-export default NeumorphismButton;
+export default RoundedSideButton;
