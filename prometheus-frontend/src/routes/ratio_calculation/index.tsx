@@ -30,7 +30,7 @@ const RatioCalculation: FC = () => {
           onSubmit();
         }}
         name="Submit"
-        fontRemSize={0.15}
+        fontRemSize={0.5}
       />
     </>
   );
