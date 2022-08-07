@@ -1,11 +1,11 @@
 .string {
-  /* color: #c0c0c0; */
-  color: rgba(181, 44, 44, 0.729);
+  color: #c0c0c0;
+  /* color: rgba(181, 44, 44, 0.729); */
   font-size: 50px;
   font-weight: bold;
   font-family: sans-serif;
   text-transform: uppercase;
-  text-shadow: -6px 6px 15px rgba(0, 0, 0, 0.5),
+  text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5),
     6px -6px 15px rgba(255, 255, 255, 0.8);
 }
 
