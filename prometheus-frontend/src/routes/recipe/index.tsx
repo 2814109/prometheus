@@ -1,11 +1,10 @@
 import { FC } from "react";
-import useRecipe from "../../network/hooks/recipe";
+import useRecipe from "../../network/hooks/useRecipe";
 import NeumorphismString from "../../components/Neumorphism/String";
 import { marginBottom } from "../../libs/createCss";
+
 const Index: FC = () => {
   const { loading, error, data } = useRecipe();
-  console.log(data);
-
   return (
     <>
       <div style={marginBottom(24)}>

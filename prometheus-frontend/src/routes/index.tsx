@@ -5,6 +5,7 @@ import ButtonPage from "./button/index";
 import DynamicForm from "./dynamic_form/index";
 import RatioCalculation from "./ratio_calculation";
 import Recipe from "../routes/recipe/index";
+import AddRecipe from "../routes/recipe/add/index";
 import App from "../App";
 
 const Router: FC = () => (
@@ -16,6 +17,7 @@ const Router: FC = () => (
       <Route path="dynamic_form" element={<DynamicForm />} />
       <Route path="ratio_calculation" element={<RatioCalculation />} />
       <Route path="recipe" element={<Recipe />} />
+      <Route path="recipe/add" element={<AddRecipe />} />
     </Routes>
   </BrowserRouter>
 );
