@@ -1,12 +1,8 @@
 import { FC, useRef } from "react";
 import NeumorphismInput from "../../components/Neumorphism/Input";
 import NeumorphismButton from "../../components/Neumorphism/Button/index";
+import { marginBottom } from "../../libs/createCss";
 
-const marginBottom = (marginNumber: number) => {
-  return {
-    marginBottom: marginNumber,
-  };
-};
 const RatioCalculation: FC = () => {
   const startAtDate = useRef<HTMLInputElement>(null);
   const endOfDate = useRef<HTMLInputElement>(null);
