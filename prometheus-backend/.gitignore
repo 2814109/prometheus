@@ -1,6 +1,6 @@
 # dependencies
 /node_modules
-
+/postgres-data
 # IDE
 /.idea
 /.awcache
@@ -19,3 +19,5 @@ npm-debug.log
 
 # dist
 /dist
+
+.env
